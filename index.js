@@ -95,21 +95,21 @@ app.get(`/`, function(req, res) {
   res.sendFile(path.join(__dirname, 'public', 'website', 'index.html'));
 });
 
-const URL = "/learnipie/";
-app.use(`${URL}api/v1/auth`, auth);
+const URL = "api/v1/";
+app.use(`${URL}auth`, auth);
 // app.use(verifyApiKey);
-app.use(`${URL}api/v1/levels`, levels);
-app.use(`${URL}api/v1/guidances`, guidances);
-app.use(`${URL}api/v1/subjects`, subjects);
-app.use(`${URL}api/v1/courses`, courses);
-app.use(`${URL}api/v1/exams`, exams);
-app.use(`${URL}api/v1/users`, users);
-app.use(`${URL}api/v1/scholarships`, scholarships);
-app.use(`${URL}api/v1/sharedPdf`, sharedPdf);
-app.use(`${URL}api/v1/stories`, story);
-app.use(`${URL}api/v1/examinationDocument`, examinationDocument);
-app.use(`${URL}api/v1/examination`, examination);
-app.use(`${URL}api/v1/services`, service);
+app.use(`${URL}levels`, levels);
+app.use(`${URL}guidances`, guidances);
+app.use(`${URL}subjects`, subjects);
+app.use(`${URL}courses`, courses);
+app.use(`${URL}exams`, exams);
+app.use(`${URL}users`, users);
+app.use(`${URL}scholarships`, scholarships);
+app.use(`${URL}sharedPdf`, sharedPdf);
+app.use(`${URL}stories`, story);
+app.use(`${URL}examinationDocument`, examinationDocument);
+app.use(`${URL}examination`, examination);
+app.use(`${URL}services`, service);
 
 // Handle errors
 app.use(errorHandler);
