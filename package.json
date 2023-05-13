@@ -1,0 +1,49 @@
+{
+  "name": "kimikoschool",
+  "version": "1.0.0",
+  "description": "API four kimico mobile app and website",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ibrahim-maghfoul/kimiko.com.git"
+  },
+  "keywords": [
+    "study",
+    "school",
+    "api",
+    "read"
+  ],
+  "author": "ibrahim maghfoul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibrahim-maghfoul/kimiko.com/issues"
+  },
+  "homepage": "https://github.com/ibrahim-maghfoul/kimiko.com#readme",
+  "dependencies": {
+    "axios": "^1.2.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "express-mongo-sanitize": "^2.2.0",
+    "glob": "^8.0.3",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.3",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.8.0",
+    "pdf-lib": "^1.17.1",
+    "pdf-watermark": "^1.0.3",
+    "sharp": "^0.31.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
