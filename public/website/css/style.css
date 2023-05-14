@@ -608,26 +608,18 @@ font-size: 60px;
 font-weight: 800;
 line-height: 80px;
 color: transparent;
--webkit-text-stroke:1px #fff ;
+-webkit-text-stroke:.5px #fff ;
 font-family:  sans-serif;
 background-image:url(../img/back.png) ;
 -webkit-background-clip: text;
+background-clip: text;
 background-color: 0 0;
-animation: back 8s linear infinite;
-
-
+animation: back 70s linear infinite;
 }
 @keyframes back {
     100%{
-        background-position: 1000px 0;
+        background-position:20000px 0;
 
     }
 }
 
-
-.text-box h3{
-color: #fff;
-font-size: 30px;
-font-weight: 800;
-
-}
