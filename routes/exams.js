@@ -11,6 +11,9 @@ const {
   updateExam,
   getAllExams,
 } = require("../controllers/exams");
+const {verifyApiKey} = require("../middlewares/auth");
+
+router.use(verifyApiKey)
 
 router.route("/:subjectId").get(getExams).post(createExam);
 router.route("/:id/exam").get(getExam).put(updateExam).delete(deleteExam);

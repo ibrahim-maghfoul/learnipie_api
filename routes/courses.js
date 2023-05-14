@@ -12,7 +12,10 @@ const {
   updateCourse,
   getAllCourses,
 } = require("../controllers/courses");
+const {verifyApiKey} = require("../middlewares/auth");
 
+
+router.use(verifyApiKey)
 router
   .route("/:subjectId")
   .get(getCourses)

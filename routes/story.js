@@ -12,6 +12,10 @@ const {
 } = require("../controllers/stories");
 
 const { protect, authorize } = require("../middlewares/auth");
+const {verifyApiKey} = require("../middlewares/auth");
+
+
+router.use(verifyApiKey)
 
 router
   .route("/")

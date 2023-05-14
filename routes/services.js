@@ -14,6 +14,10 @@ const {
   sendEmail,
 } = require("../controllers/services");
 
+const {verifyApiKey} = require("../middlewares/auth");
+
+
+router.use(verifyApiKey)
 router
   .route("/:id")
   .get(getService)

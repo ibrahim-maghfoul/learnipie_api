@@ -10,7 +10,9 @@ const {
   updateExaminationDocument,
   getAllExaminationDocument,
 } = require("../controllers/examinationsDocuments");
+const {verifyApiKey} = require("../middlewares/auth");
 
+router.use(verifyApiKey)
 router
   .route("/examination/:examinationId")
   .get(getExaminationDocuments)

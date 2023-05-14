@@ -11,7 +11,7 @@ const cors = require('cors');
 const https = require('https');
 const fs = require('fs');
 const jwt = require("jsonwebtoken");
-const {verifyApiKey} = require("./middlewares/auth");
+// const {verifyApiKey} = require("./middlewares/auth");
 
 
 const connectDB = require("./config/db");
@@ -95,21 +95,21 @@ app.get(`/`, function(req, res) {
   res.sendFile(path.join(__dirname, 'public', 'website', 'index.html'));
 });
 
-const URL = "/learnipie/";
+const URL = "/";
 app.use(`${URL}api/v1/auth`, auth);
-// app.use(verifyApiKey);
+app.use(`${URL}api/v1/users`, users);
 app.use(`${URL}api/v1/levels`, levels);
 app.use(`${URL}api/v1/guidances`, guidances);
 app.use(`${URL}api/v1/subjects`, subjects);
+app.use(`${URL}api/v1/services`, service);
 app.use(`${URL}api/v1/courses`, courses);
 app.use(`${URL}api/v1/exams`, exams);
-app.use(`${URL}api/v1/users`, users);
 app.use(`${URL}api/v1/scholarships`, scholarships);
 app.use(`${URL}api/v1/sharedPdf`, sharedPdf);
 app.use(`${URL}api/v1/stories`, story);
 app.use(`${URL}api/v1/examinationDocument`, examinationDocument);
 app.use(`${URL}api/v1/examination`, examination);
-app.use(`${URL}api/v1/services`, service);
+
 
 // Handle errors
 app.use(errorHandler);

@@ -13,6 +13,11 @@ const {
   likeScholarship,
 } = require("../controllers/scholarships");
 
+const {verifyApiKey} = require("../middlewares/auth");
+
+
+router.use(verifyApiKey)
+
 router
   .route("/:id")
   .get(getScholarship)

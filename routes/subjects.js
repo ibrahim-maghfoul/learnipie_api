@@ -11,6 +11,10 @@ const {
   updateSubject,
   getSubjectsWithCoursesAndExams,
 } = require("../controllers/subjects");
+const {verifyApiKey} = require("../middlewares/auth");
+
+
+router.use(verifyApiKey)
 
 router
   .route("/:guidanceId")

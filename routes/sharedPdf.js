@@ -13,6 +13,11 @@ const {
   deleteAllSharedPdfs,
 } = require("../controllers/sharedPdf");
 
+const {verifyApiKey} = require("../middlewares/auth");
+
+
+router.use(verifyApiKey)
+
 router
   .route("/:id")
   .get(getSharedPdf)
