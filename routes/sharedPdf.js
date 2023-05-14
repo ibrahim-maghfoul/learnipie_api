@@ -11,7 +11,7 @@ const {
   getSharedPdf,
   updateSharedPdf,
   deleteAllSharedPdfs,
-} = require("../controllers/sharedpdf");
+} = require("../controllers/sharedPdf");
 
 router
   .route("/:id")
