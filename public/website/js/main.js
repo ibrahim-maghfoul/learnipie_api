@@ -1,6 +1,7 @@
 (function ($) {
     "use strict";
 
+    $('html').css('overflow-x', 'hidden');
     // Spinner
     var spinner = function () {
         setTimeout(function () {
@@ -52,7 +53,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: 0}, 2000, 'easeInOutExpo');
         return false;
     });
 
@@ -60,14 +61,14 @@
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
         delay: 10,
-        time: 2000
+        time: 700
     });
 
 
     // Screenshot carousel
     $(".screenshot-carousel").owlCarousel({
         autoplay: true,
-        smartSpeed: 1000,
+        smartSpeed: 1000,autoplayTimeout: 2000,
         loop: true,
         dots: true,
         items: 1
