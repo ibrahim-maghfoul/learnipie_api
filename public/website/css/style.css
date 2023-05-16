@@ -8,6 +8,9 @@
     --dark: #262B47;
 }
 
+html {
+    scroll-snap-type: x mandatory;
+}
 
 body {
     overflow-x: hidden;
@@ -214,6 +217,7 @@ h6,
 .navbar-light .navbar-nav .nav-link.active::before {
     top: 0;
 }
+
 .navbar-brand {
     display: flex;
     align-items: center;
@@ -281,10 +285,11 @@ h6,
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        margin-left: 0px;
     }
 
     .navbar-light .navbar-brand img {
-        max-height: 45px;
+        max-height: 25px;
     }
 }
 
@@ -311,6 +316,12 @@ h6,
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        margin-left: 0px;
+
+    }
+
+    .navbar-light .navbar-brand img {
+        max-height: 25px;
     }
 }
 
@@ -617,30 +628,30 @@ h6,
 
 
 
-.text-box{
-color: #fff;
+.text-box {
+    color: #fff;
 
 }
 
 
 .text-box {
-color: #fff;
-font-size: 60px;
-font-weight: 800;
-line-height: 80px;
-color: transparent;
--webkit-text-stroke:.5px #fff ;
-font-family:  sans-serif;
-background-image:url(../img/back.png) ;
--webkit-background-clip: text;
-background-clip: text;
-background-color: 0 0;
-animation: back 70s linear infinite;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 80px;
+    color: transparent;
+    -webkit-text-stroke: .5px #fff;
+    font-family: sans-serif;
+    background-image: url(../img/back.png);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-color: 0 0;
+    animation: back 70s linear infinite;
 }
+
 @keyframes back {
-    100%{
-        background-position:20000px 0;
+    100% {
+        background-position: 20000px 0;
 
     }
 }
-
