@@ -389,9 +389,9 @@ h6,
 /*** Screenshot ***/
 .screenshot-carousel {
     position: relative;
-    width: 253px;
+    width: 270px;
     height: 500px;
-    padding: 8px 8px 10px 5px;
+    padding: 8px 14px  ;
     margin-right: 10px;
 }
 
@@ -403,7 +403,7 @@ h6,
     top: 0;
     left: 0;
     background: url(../img/screenshot-frame.png) center center no-repeat;
-    background-size: 265px 475px;
+    background-size: 270px 475px;
     z-index: 1;
 }
 
@@ -655,3 +655,48 @@ h6,
 
     }
 }
+
+
+/* slider  */
+.swiper {
+ 
+flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+    text-align: center;
+  }
+  .swiper-bg { height: 100%;
+
+    background:
+        url(../img/bg-circle.png),
+        url(../img/bg-triangle.png),
+        url(../img/bg-bottom.png),
+        linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background-position:
+        left 0px top 0px,
+        right 0px top 50%,
+        center bottom;
+    background-repeat: no-repeat;
+}
+  .swiper-wrapper {
+    background-position: center;
+    background-size: cover;
+    width: auto; 
+ 
+
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: auto; 
+    height: 70vh;
+
+  }
+
+  .swiper-slide img {
+    display: block;
+    height: 100%;
+    border: 3px solid #04509F;
+    border-radius: 10px;
+  }
