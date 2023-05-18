@@ -78,6 +78,7 @@ app.use(fileupload());
 
 //Set static folder
 app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "website")));
 
 
 //generate api key
@@ -90,9 +91,10 @@ app.use(express.static(path.join(__dirname, "public")));
 
 
 
+
 // Routes file
 app.get(`/`, function(req, res) {
-  res.sendFile(path.join(__dirname, 'public', 'website', 'index.html'));
+  res.sendFile(path.join(__dirname,  'website', 'index.html'));
 });
 
 const URL = "/";
