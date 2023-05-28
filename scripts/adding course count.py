@@ -2,7 +2,7 @@ import json
 import traceback
 
 
-dir = 'C:/Users/neulich/Desktop/learnipie'
+dir = 'C:/Users/neulich/Desktop/college/learnipie'
 
 
 # dir ="C:/Users/ibrahim/Desktop/KIMIKO API/Scooly API/_data/subjects.json"

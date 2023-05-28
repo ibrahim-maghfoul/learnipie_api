@@ -3,7 +3,7 @@ import traceback
 
 
 
-dir = 'C:/Users/neulich/Desktop/learnipie'
+dir = 'C:/Users/neulich/Desktop/college/learnipie'
 file_name = "subjects_with_course_count"
 file_path = f'{dir}/{file_name}'
 

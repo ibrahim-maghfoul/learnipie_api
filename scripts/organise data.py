@@ -4,8 +4,8 @@ import glob
 
 
 new_list = []
-dir = 'C:/Users/neulich/Desktop'
-folder_name = "levels"
+dir = 'C:/Users/neulich/Desktop/college'
+folder_name = "exams"
 rootdir = f'{dir}/{folder_name}/'
 
 # Create directory if it doesn't exist
